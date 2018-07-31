@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/coffee"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="#E67E22"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        />
+
+    <RadioGroup
+        android:id="@+id/group"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        >
+
+        <RadioButton android:id="@+id/french"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="FRENCH"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+        <RadioButton android:id="@+id/turkish"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="TURKISH"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+        <RadioButton android:id="@+id/espresso"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="ESPRESSO"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_margin="16dp"
+        >
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle"
+            />
+
+        <TextView
+            android:id="@+id/numberofcups"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            />
+
+        <Button
+            android:id="@+id/addcups"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle"
+            />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/add_cream"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Add Cream"
+        android:textSize="30sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <CheckBox
+        android:id="@+id/add_chocolate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Add Chocolate"
+        android:textSize="30sp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        >
+
+        <Button
+            android:id="@+id/confirm"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="confirm"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle"
+            />
+
+        <Button
+            android:id="@+id/neworder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="new order"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@drawable/circle"
+            android:layout_marginLeft="8dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"        android:text=""
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:background="@drawable/circle"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="THANKS"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="#E67E22"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_marginBottom="16dp"
+        />
+
+</LinearLayout>
